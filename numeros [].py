@@ -1,5 +1,5 @@
 numeros []
-
+#teste
 
 while True:
     num = int(input("digitar um valor positivo -1 para parar "))
