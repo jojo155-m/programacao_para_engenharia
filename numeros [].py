@@ -1,25 +1,17 @@
-numeros []
-#teste
-
-while True:
-    num = int(input("digitar um valor positivo -1 para parar "))
-
-    if num ==-1:
-        break
-
-    if num > 0:
-        numeros.append (num)
-
-if len (numeros) == 0 :
-    print ("nenhum número positivo foi digitado")
-
+numeros = []
+numero = float(input("Digite um número: "))
+while numero != -1:
+    if numero >0:
+        numeros.append(numero)
+    numero = float(input("Digite um número: "))
+if  len(numeros) > 0:
+    soma = sum(numeros)
+    media = soma / len(numeros)
+    minimo = min(numeros)
+    maximo = max(numeros)
+    print(f"A soma é {soma}")
+    print(f"media é {media}")
+    print(f"minimo é {minimo}")
+    print(f"maximo é {maximo}")
 else:
-    soma = num(numeros)
-    media= soma /len (numeros)
-    menor = min(numeros)
-    maior = max (numeros )  
-
-    print("soma dos numeros :", soma)
-    print("medía dos numeros :",media)
-    print("menos numeros ", menor)
-    print("maior numeros ", maior )      
+    print("Número invalido")
